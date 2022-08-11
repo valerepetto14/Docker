@@ -1,0 +1,9 @@
+FROM node:12 especificas la imagen a partir de la cual se crea el contedor
+
+WORKDIR /app -los comandos que siguen se van a ejecutar en este directorio
+
+COPY / . - Va a copiar todos los archivos del directorio donde este el docker file en app
+
+RUN npm install - ejecuta el comando y installa los paquetes
+
+CMD ["node", "node app.js"] - Este comando se ejecuta para correr la aplicacion que queres que corra dentro del contenedor

@@ -1,0 +1,15 @@
+docker images - te muestra las imagenes que tenes
+docker ps - te muestra los contenedores que estan activos
+docker ps -a - te muestra contenedores que corrieron, esta lista se va borrando 
+                gracias a un garbage colector,seguramente te aparecescan los mas recientes
+docker run <id o nombre de imagen> - corre el contenedor especificado
+
+docker build . - construye la imagen en base al dockerfile
+
+        docker build -t(tagear) app-vale  . - le das un nombre o tag 
+
+docker run -p(puerto) 3000(mio):3000(docker) app-vale - este comando espones su puesto en un puerto mio
+           -d (corre el proceso en background)
+           -v ()
+
+docker login- para loguearte en docker, es importante ponerle el nombre de usuario en el tag

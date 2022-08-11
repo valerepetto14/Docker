@@ -1,0 +1,13 @@
+# alpines es una version de linux que pesa muy poco,
+tiene lo minimo para correr las aplicaciones, se recomienda usar. 
+
+# Siempre es aconcejable ponerle la version a la imagen ,porque Si, 
+  ponemos por ejemplos Node, puede que esa imagen se actualice y que tu
+  codigo no funcione
+
+# los contenedores corren en una red de docker que no comparte con tu host, no podes acceder a sus puertos,
+  se necesita especificarlo
+
+# cada vez que haces un cambio en la aplicaciones que queres correr tenes que hacer un build de nuevo para     que  se contrruya de nuevo la imagen
+
+# para compartir una imagen tuya con otra persona tenes que subirla a un registro de docker ,como docker hub
